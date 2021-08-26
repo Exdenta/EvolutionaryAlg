@@ -1,0 +1,51 @@
+best after 0 epoch: cost: 4069, combination: [1 0 0 0 1 0 0 0 0 0 0 0 1 1 1 1 0]
+best after 1 epoch: cost: 4069, combination: [1 0 0 0 1 0 0 0 0 0 0 0 1 1 1 1 0]
+best after 2 epoch: cost: 4069, combination: [1 0 0 0 1 0 0 0 0 0 0 0 1 1 1 1 0]
+best after 3 epoch: cost: 4069, combination: [1 0 0 0 1 0 0 0 0 0 0 0 1 1 1 1 0]
+best after 4 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 5 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 6 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 7 epoch: cost: 4069, combination: [1 0 0 0 1 0 0 0 0 0 0 0 1 1 1 1 0]
+best after 8 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 9 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 10 epoch: cost: 4069, combination: [1 0 0 0 1 0 0 0 0 0 0 0 1 1 1 1 0]
+best after 11 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 12 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 13 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 14 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 15 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 16 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 17 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 18 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 19 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 20 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 21 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 22 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 23 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 24 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 25 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 26 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 27 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 28 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+best after 29 epoch: cost: 4102, combination: [1 0 0 0 1 0 0 0 0 0 0 1 1 1 1 1 0]
+(100, 17)
+[[1 0 0 ... 1 1 0]
+ [1 0 0 ... 1 1 0]
+ [1 0 0 ... 1 1 0]
+ ...
+ [1 0 0 ... 1 1 0]
+ [1 0 0 ... 1 1 0]
+ [1 0 1 ... 1 1 0]]
+[4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102
+ 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102
+ 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102
+ 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102 4102
+ 4102 4102 4102 4102 4069 4069 4029 4002 3929 3902 3789 3789 3789 3789
+ 3633 3602 3602 3602 3602 3602 3602 3569 3569 1102 1102  633   -1   -1
+   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1   -1
+   -1   -1]
+Evolutionary: 0.2960 seconds
+combination:  [1 1 1 0 0 0 0 0 0 0 0 1 1 1 1 1 0]
+combination cost:  4102
+combination wight:  972
+Brute force: 20.0573 seconds
