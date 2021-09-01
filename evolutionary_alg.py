@@ -180,8 +180,6 @@ class EvolutionalyAlg():
             print(f"best after {i} epoch: cost: " + str(
                 population_fitness[0]) + ", combination: " + str(population_matrix[0]))
 
-        print(population_matrix.shape)
-        print(population_matrix)
         print(population_fitness)
 
 
@@ -190,7 +188,7 @@ def main():
     mutation_chance = 0.02
 
     # population size for evolutionary alg
-    population_size = 100
+    population_size = 1000
 
     # maximum epoch count
     max_epoch_count = 30
@@ -216,7 +214,10 @@ def main():
         Item('item14', 83, 3),
         Item('item15', 73, 3),
         Item('item16', 3000, 300),
-        Item('item17', 31, 123)
+        Item('item17', 31, 123),
+        Item('item18', 36, 40),
+        Item('item19', 31, 31),
+        Item('item20', 319, 7),
     ]
 
     analytical_solution = AnalyticalAlg()
@@ -228,10 +229,10 @@ def main():
     toc = time.perf_counter()
     print(f"Evolutionary: {toc - tic:0.4f} seconds")
 
-    tic = time.perf_counter()
-    analytical_solution.run(items, max_weight)
-    toc = time.perf_counter()
-    print(f"Brute force: {toc - tic:0.4f} seconds")
+    # tic = time.perf_counter()
+    # analytical_solution.run(items, max_weight)
+    # toc = time.perf_counter()
+    # print(f"Brute force: {toc - tic:0.4f} seconds")
 
 
 if __name__ == "__main__":
