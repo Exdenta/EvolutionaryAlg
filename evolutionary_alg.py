@@ -1,6 +1,11 @@
-from itertools import groupby
-from more_itertools import sort_together
-import matplotlib.pyplot as plt
+"""
+* @ author Lex Sherman
+* @ email alexandershershakov@gmail.com
+* @ create date 2021-08-30 11: 00: 00
+* @ modify date 2021-08-30 11: 00: 00
+* @ desc Evolutionary algorithm for Knapsack problem
+"""
+
 import numpy as np
 import random
 import time
