@@ -6,39 +6,76 @@
 * @ desc Swarm intelligence algorithm for shortest path to visit all nodes8
 """
 
-import string
 import numpy as np
 import pylab as plt
 import networkx as nx
 from graph import Graph
 import matplotlib.pyplot as plt
+from collections import deque
+import copy
 
 
-def get_combinations(n_items: int):
-    """ Generate all possible combinations of items
-        Args:
-            n_items (int): number of items
-        Returns:
-            combination matrix sizeof: (n_items, pow(2, n_items))
-    """
-    combinations = np.zeros((pow(2, n_items), n_items))
-    for col in range(0, n_items):
-        reps = pow(2, col)
-        for row in range(reps, pow(2, n_items), 2 * reps):
-            combinations[row: row+reps, col] = 1
-    return combinations
+# def bfs_alg(graph: Graph):
+#     """ Bruteforce algorithm by trying all paths possible
+#     """
+#     class Node:
+#         def __init__(self, vertices, length=0):
+#             self.vertices = vertices  # visited vertices
+#             self.length = length      # path length between vertices
+
+#     best_distance = np.core.numeric.Inf
+#     Q = deque
+#     Q.append(Node(graph.vertices[0], 0))
+#     while Q:
+#         vertex = Q.popleft()
 
 
-def bruteforce_alg(distance_matrix: np.array):
+#     for node in range(0, graph.vertices_no):
+
+#     pass
+
+
+def bfs_alg(node_distances: np.array):
     """ Bruteforce algorithm by trying all paths possible
     """
-    node_count = distance_matrix.shape[0]
-    combinations = get_combinations(node_count)
-    best_distance = np.core.numeric.Inf
+    assert(node_distances.shape[0] == node_distances.shape[1])
+    n_vertices = node_distances.shape[0]
 
-    s = list
+    class Path:
+        def __init__(self, vertices: list, length=0):
+            self.vertices = vertices  # visited vertices
+            self.length = length      # path length between vertices
 
-    pass
+        def get_last_node(self):
+            return self.vertices[len(self.vertices) - 1]
+
+    def get_children(path: Path) -> list:
+        """ Returns all children with path != 0
+        """
+        assert(node_distances.shape[0] == node_distances.shape[1])
+        children = []
+        for i in range(node_distances.shape[0]):
+            dist = node_distances[path.get_last_node()][i]
+            if (i not in path.vertices) and (dist != 0):
+                n = Path(path.vertices.copy(), path.length)
+                n.vertices.append(i)
+                n.length += dist
+                children.append(n)
+        return children
+
+    Q = deque([Path([0], 0)])
+    results = list()
+    while Q:
+        path = Q.popleft()
+        if len(path.vertices) < n_vertices:
+            children = get_children(path)
+            for child in children:
+                Q.append(child)
+        else:
+            results.append(path)
+
+    newlist = sorted(results, key=lambda k: k.length)
+    print(f"len: {newlist[0].length}, {newlist[0].vertices}")
 
 
 class Ant:
@@ -84,11 +121,9 @@ def main():
     graph = Graph()
     graph.init_from_adjacency_matrix(paths_distances)
 
-    graph.get_node
-
     # plt.imshow(paths_distances)
     # plt.show()
-    # bruteforce_alg(paths_distances)
+    bfs_alg(paths_distances)
 
     pass
 
